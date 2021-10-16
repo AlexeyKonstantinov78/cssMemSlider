@@ -69,6 +69,16 @@
     border: 0.2rem solid #fff;
 }
 
+.slider-control__panel-indicators-li:focus div {
+    background-color: #7dce92;
+    border: 0.2rem solid #7dce92;
+}
+
+.slider-control__panel-indicators-li:active div {
+    background-color: #7dce92;
+    border: 0.2rem solid #7dce92;
+}
+
 .slider-control__panel-info-p {
     font-size: 2rem;
     opacity: 0;
@@ -90,6 +100,16 @@
 .li-activ:hover div {
     background-color: unset;
     border: 0.2rem solid #fff;
+}
+
+.li-activ:focus div {
+    background-color: #7dce92;
+    border: 0.2rem solid #7dce92;
+}
+
+.li-activ:active div {
+    background-color: #7dce92;
+    border: 0.2rem solid #7dce92;
 }
 
 @media screen and (max-width: 1024px) {
