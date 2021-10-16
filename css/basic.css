@@ -1,0 +1,52 @@
+/* поведение размера */
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth; 
+}
+/* на все элементы сайта */
+*, 
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px; /* минимальная ширина */
+    min-height: 100vh; /* на вс. высоту */    
+    font-family: 'Raleway, sans-serif';    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {    
+    text-decoration: none;    
+}
+
+a:hover {
+    color: #CC9933;
+}
+
+.container {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 3rem;
+}
