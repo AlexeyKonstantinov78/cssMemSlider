@@ -48,7 +48,7 @@ sliderControlPanelIndicators.addEventListener('click', (event) => {
 
     console.log(target);
 
-    if (target.classList.contains('slider-control__panel-indicators-li')) {
+    if (target.closest('.slider-control__panel-indicators-li')) {
         if (target.dataset.slide === undefined) {
             changingActiveSlider(target.parentNode.dataset.slide);
         } else {
