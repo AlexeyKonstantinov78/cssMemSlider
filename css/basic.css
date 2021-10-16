@@ -2,19 +2,22 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
+
 /* на все элементы сайта */
-*, 
+*,
 ::after,
 ::before {
     box-sizing: inherit;
 }
 
 body {
-    min-width: 320px; /* минимальная ширина */
-    min-height: 100vh; /* на вс. высоту */    
-    font-family: 'Raleway, sans-serif';    
+    min-width: 320px;
+    /* минимальная ширина */
+    min-height: 100vh;
+    /* на вс. высоту */
+    font-family: 'Raleway, sans-serif';
 }
 
 img {
@@ -22,11 +25,18 @@ img {
     height: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-button {
+button,
+li {
     cursor: pointer;
 }
 
@@ -36,16 +46,16 @@ ul {
     margin: 0;
 }
 
-a {    
-    text-decoration: none;    
+a {
+    text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
     color: #CC9933;
-}
+} */
 
 .container {
-    max-width: 1650px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
     margin-bottom: 3rem;
