@@ -65,6 +65,8 @@
 
 .slider-control__panel-info-p {
     font-size: 2rem;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .img-activ {
