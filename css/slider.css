@@ -9,7 +9,7 @@
 
 .slider-wrapper {
     overflow: hidden;
-    height: 65rem;
+    height: 68rem;
     margin: 0 auto;
 }
 
@@ -23,22 +23,57 @@
     width: 0;
     opacity: 0;
     transition: all 0.5s;
+
 }
 
 .slider-wrapper__item img {
-
     width: 100%;
+    margin-bottom: 1rem;
+}
+
+.slider-wrapper__item p {
+    color: #fff;
+    font-size: 3rem;
 }
 
 .slider-control {
     padding-top: 1rem;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.slider-control label {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.slider-control__panel-indicators {
+.slider-control label:active {
+    background-color: #7dce92;
+    border: 0.2rem solid #7dce92;
+    border-radius: 2.5rem;
+}
+
+/* .img-activ {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+/* width: 100%;
+opacity: 1;
+} */
+
+.slider-control label #slide0:checked~.slider-wrapper .slider-wrapper__items #slider-00 {
+    width: 100%;
+    opacity: 1;
+}
+
+/* .slider-control__panel-indicators {
     display: flex;
 
     gap: 2rem;
@@ -62,9 +97,9 @@
     width: 2rem;
     height: 2rem;
     transition: all 0.5s;
-}
+} */
 
-.slider-control__panel-indicators-li:hover div {
+/* .slider-control__panel-indicators-li:hover div {
     background-color: #fff;
     border: 0.2rem solid #fff;
 }
@@ -77,23 +112,17 @@
 .slider-control__panel-indicators-li:active div {
     background-color: #7dce92;
     border: 0.2rem solid #7dce92;
-}
+} */
 
-.slider-control__panel-info-p {
+/* .slider-control__panel-info-p {
     font-size: 2rem;
     opacity: 0;
     transition: all 0.5s;
-}
+} */
 
-.img-activ {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    opacity: 1;
-}
 
-.li-activ div {
+
+/* .li-activ div {
     background-color: unset;
 }
 
@@ -110,8 +139,8 @@
 .li-activ:active div {
     background-color: #7dce92;
     border: 0.2rem solid #7dce92;
-}
-
+} */
+/* 
 @media screen and (max-width: 1024px) {
     .slider-control {
         display: inline-block;
@@ -125,4 +154,4 @@
     .slider-wrapper {
         height: 53vw;
     }
-}
+} */

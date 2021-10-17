@@ -7,38 +7,45 @@
     <title>cssMemSlider</title>
     <meta name="description" content="cssMemSlider слайдер">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/script.js"></script> -->
 </head>
 <body>
     <section class="slider">
         <div class="container slider-container">
-            <div class="slider-content">
+            <div class="slider-content">            
                 <div class="slider-wrapper">
                     <div class="slider-wrapper__items">
-                        <div class="slider-wrapper__item img-activ"  >
+                        <div class="slider-wrapper__item slide0" id="slider-00">
                             <img class="slider-wrapper__item-img" src="image/5cxxerror.png"  alt="5xx Server Error" >
+                            <p>5xx Server Error</p>
                         </div>
-                        <div class="slider-wrapper__item"  >
+                        <div class="slider-wrapper__item slide1" id="slider-01">
                             <img class="slider-wrapper__item-img" src="image/dejstvija-pri-pozhale.jpg"   alt="Действия при пожаре" >
+                            <p>Действия при пожаре</p>
                         </div>
-                        <div class="slider-wrapper__item"  >
+                        <div class="slider-wrapper__item slide2" id="slider-02">
                             <img class="slider-wrapper__item-img" src="image/princip-very.png"   alt="Вера" >
+                            <p>Вера</p>
                         </div>
-                        <div class="slider-wrapper__item"  >
+                        <div class="slider-wrapper__item slide3" id="slider-03">
                             <img class="slider-wrapper__item-img" src="image/uborshhica-v-ofise-fejsbuka-zadevshaja-kabel-shvabroj.jpg"  alt="Уборщица в офисе инстаграм задевшая кабель шваброй" >
+                            <p>Уборщица в офисе инстаграм задевшая кабель шваброй</p>
                         </div>
                     </div>
                 </div>
-                <div class="slider-control">
-                    <div class="slider-control__panel-info">
-                        <p class="slider-control__panel-info-p">5xx Server Error</p>
-                    </div>
-                    <ol class="slider-control__panel-indicators">
-                        <li class="slider-control__panel-indicators-li li-activ" data-slide="0"><div></div></li>
-                        <li class="slider-control__panel-indicators-li"data-slide="1"><div></div></li>
-                        <li class="slider-control__panel-indicators-li"data-slide="2"><div></div></li>
-                        <li class="slider-control__panel-indicators-li"data-slide="3"><div></div></li>
-                    </ol>
+                <div class="slider-control">                    
+                    <label for="slide0">
+                        <input type="radio" name="point" id="slide0" checked>
+                    </label>
+                    <label for="slide1">
+                        <input type="radio" name="point" id="slide1">
+                    </label>
+                    <label for="slide2">
+                        <input type="radio" name="point" id="slide2">
+                    </label>
+                    <label for="slide3">
+                        <input type="radio" name="point" id="slide3">
+                    </label>
                 </div>
             </div>            
         </div>
