@@ -39,16 +39,12 @@ label {
 }
 
 input[type="radio"] {
-    cursor: pointer;
+
     width: 0;
     height: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
 }
 
-input[type="radio"]:before {
+/* input[type="radio"]:before {
     content: "";
     display: inline-block;
     width: 2rem;
@@ -62,7 +58,7 @@ input[type="radio"]:before {
 
 input[type="radio"]:checked::before {
     background-color: transparent;
-}
+} */
 
 
 
